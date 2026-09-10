@@ -1,0 +1,127 @@
+> ### Your stash is the bankroll
+>
+> No chips, no separate wallet, nothing to cash out. What you bet is what's already in your stash, and what you win lands back in it before the panel even closes. Lose, and it's gone the same as anything you didn't make it out of a raid with.
+
+A casino in your menu. One tab, a lobby, and tables that play for the roubles in your stash.
+
+There is no unlock, no hideout requirement and no quest. Install it, and a **CASINO** tab appears on the bar along the bottom of the menu — on a profile five minutes old or one with a thousand raids behind it.
+
+The bar is on every screen outside a raid, so the tables open from the hideout, the flea market or a trader screen without backing out of them first.
+
+**This is a place, not a feature.** The lobby is built to grow: each table is a tile, and new games get added as tiles rather than as new mods with new tabs. Blackjack, hold'em, a single-zero wheel and a slot machine are open so far, and more will arrive in this mod rather than beside it.
+
+![SPT Casino](https://i.imgur.com/HPJ7e19.png)
+
+## The money is real
+
+A stake leaves your stash the moment you commit it. Winnings are paid straight back in. There is no chip balance, no separate wallet and nothing to cash out — what you see in your stash is what you have.
+
+If your stash is too full to take a payout, it arrives in the post instead. Nothing is ever lost to a full container.
+
+**Your gear is never at stake.** Weapons, armour and rigs cannot be bet.
+
+The house edge is real too, and it does not get tired. Roulette keeps 2.70% of everything staked on it, forever; the slot machine gives back 92.51% and keeps the rest. Blackjack and poker are not charity either. Play with what you could lose in a raid.
+
+## The tables {.tabset}
+
+### Blackjack
+
+Six decks, a server-dealt shoe, and the dealer standing on soft 17.
+
+**HIT**, **STAND**, **DOUBLE** and **SPLIT** appear when they are legal. The dealer's second card stays face down until the hand is over.
+
+- Six decks, reshuffled at three quarters
+- Blackjack pays **3:2** in currency, even money in valuables
+- Double after split, up to four hands
+
+Stake roubles, dollars, euros, GP coins, physical bitcoin or Lega medals.
+
+| Currency | Minimum | Maximum |
+|---|---|---|
+| Roubles | 1,000 | 500,000 |
+| Dollars | 10 | 5,000 |
+| Euros | 10 | 5,000 |
+| GP coins | 1 | 50 |
+| Bitcoin | 1 | 10 |
+| Lega medals | 1 | 5 |
+
+Naturals pay even money on bitcoin, GP and Lega for a simple reason: one bitcoin at 3:2 settles on half a coin, and half a bitcoin does not exist.
+
+### Poker
+
+No-limit Texas hold'em, five handed — you and four of the house's regulars.
+
+The bots are named out of the game's own PMC nickname list, so the seat that just three-bet you is called something you have seen on a killboard. They play their own game: position, pot odds, and personalities that bluff at different rates.
+
+- Blinds 10,000 / 20,000
+- Buy in for 1,000,000 by default — **set it yourself in the F12 menu**, anywhere from 200,000 to 5,000,000
+- Roubles only
+
+The blinds stay put whatever you set, so a smaller buy-in is a shorter stack and a livelier game rather than a cheaper one. 200,000 is ten big blinds; 5,000,000 is two hundred and fifty.
+
+Your stack is yours. Stand up whenever you like and it goes back to your stash — and if the server dies mid-session, it is given back the next time you sit down.
+
+### Roulette
+
+A European single-zero wheel, and it actually spins. Thirty-seven pockets, one of them green, 2.70% to the house on every bet on the cloth.
+
+The wheel is drawn from the server's own pocket list, so the numbers around the rim are the numbers it settles against. Every spin rolls its own duration, direction and friction, and the ball runs against the wheel and drops into a pocket rather than snapping to one.
+
+The cloth is the full layout, not a row of buttons:
+
+- Straight up, splits, streets, corners and six lines
+- Columns and dozens
+- Red, black, odd, even, 1–18 and 19–36
+
+Pick a chip from the tray and click a spot. **Right-click takes one back off.** Chips on the cloth cost nothing until you press spin.
+
+- Chips of 10k, 25k, 50k, 100k, 500k and 1M
+- Minimum bet 10,000
+- **No house maximum.** A million on a single number pays 36,000,000
+
+### Slots
+
+Five reels, three rows, and **243 ways to win** instead of paylines — any symbol landing on three or more reels running left to right pays, and landing more than once on a reel multiplies the win instead of counting it once. Every icon on the reels is the game's own, drawn from your own installation the way the stash renders yours.
+
+There is nothing to sit down at. No seat, no hand to hold, no chips to build up: walk up, spin, walk away.
+
+- **92.510% back, 7.490% to the house** — computed from the reel strips and the paytable, not measured by spinning it a lot
+- **AUTO** keeps it pulling on its own until you stop it; **SPEED** cycles 1X/2X/4X/6X, and shortens a manual spin too, not only AUTO's
+- Wins climb from WIN through BIG WIN, HUGE WIN and JACKPOT as the multiple grows
+- A STATS button keeps a lifetime record — pulls, hit rate, your best multiple, your current and best streak, staked and returned per currency
+
+Stake roubles, dollars or euros.
+
+| Currency | Minimum | Maximum |
+|---|---|---|
+| Roubles | 5,000 | 50,000 |
+| Dollars | 50 | 500 |
+| Euros | 50 | 500 |
+
+The machine pays up to a thousand times the stake by default. **F12 → Slots → No maximum stake** lifts that ceiling entirely, the same way Blackjack's table maximum works — the cap is the house being careful on your behalf, and you can tell it not to be.
+
+## Installing
+
+Extract into your SPT folder — the one that holds `SPT_Runtime` — and start the server. It installs as one folder on each side: `BepInEx/plugins/Casino` and `SPT_Runtime/user/mods/Casino`.
+
+Upgrading from an earlier version is the same thing: extract over the top and let it overwrite. Nothing needs removing first, and your stash, your stats and anything the house owes you are all kept.
+
+**Unless you still have the old separate mods.** Blackjack, Poker and Roulette were folded into this one in 1.0, and extracting over them will not remove them — delete `Blackjack`, `Poker` and `Roulette` from both `BepInEx/plugins` and `SPT_Runtime/user/mods` if they are there, or you will get a duplicate tab for each. Any money owed on an interrupted hand is found in the old folder and paid regardless.
+
+The first time an account walks in, a card explains what the money does. Read it once and it never comes back.
+
+**1.2.6 opens with a million roubles.** The mod came off the hub for a day while the slot machine was put right, and the first time you open the casino on this version it hands you 1,000,000 roubles by way of apology. Once per profile, straight into your stash — or into your messages if the stash is too full to take it.
+
+## Getting around
+
+**CASINO** on the bar opens the lobby. Click a tile to sit down.
+
+Escape leaves a table and brings you back to the lobby. Escape again closes the casino — and only the casino. The screen you opened it from is still there underneath.
+
+## What is coming
+
+More tables. Slots just proved the lobby means it: a tile and a panel, not another mod and another tab. If there is a game you want at it, say so.
+
+## Requirements
+
+SPT 4.1.x. No other mods required.
